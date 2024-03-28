@@ -1,0 +1,26 @@
+# Convertendo uma tupla em uma lista
+tupla_carro = ["Gol", "Corola", "Ranger", "Kadett", "Fusca", "Logan"]
+               
+lista_carro = list(tupla_carro)
+print(f"Lista carros: {lista_carro}")
+
+tupla_carros = "Golf", "Coroloa", "Civic"
+carro1, carro2, carro3 = tupla_carros
+print(f"Carro1: {carro1}")
+print(f"Carro2: {carro2}")
+print(f"Carro3: {carro3}")
+
+
+#Desempacotando uma lista em uma Tupla
+tupla_carros = "Golf", "Coroloa", "Civic", "Opala", "Tucson","Elantra"
+carro2, *carros = tupla_carros
+print(f"Carro1: {carro2}")
+print(f"Carros: {carros}") #Uma lista com os itens restantes
+
+
+
+tupla_carros = "Golf", "Coroloa", "Civic", "Opala", "Tucson","Elantra"
+*carros, tucson, elantra = tupla_carros
+print(f"Carros: {carros}")
+print(f"Tucson: {tucson}")
+print(f"Elantra: {elantra}")
